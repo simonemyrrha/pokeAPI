@@ -1,0 +1,11 @@
+.Type-btn {
+  border: .1rem solid black;
+  border-radius: 1rem;
+  outline: none;
+  color: #fff;
+  padding: .15rem .25rem;
+  font-size: .8rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  margin: .5rem;
+}

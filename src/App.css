@@ -1,0 +1,10 @@
+.App {
+  background-color: #F0F0F0;
+  color: #000;
+  overflow: auto;
+  height: 100vh;
+}
+
+.App-title {
+  text-align: center;
+}

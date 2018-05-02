@@ -1,0 +1,155 @@
+.Card-container {
+  position: relative;
+  width: 30rem;
+  margin: auto;
+}
+
+.Card {
+  /* background: linear-gradient(to bottom, rgba(231,56,39,1) 0%, rgba(231,56,39,1) 53%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 100%); */
+  /* background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(231, 56, 39, 1) 47%, rgba(231, 56, 39, 1) 100%); */
+  color: #222224;
+  width: 30rem;
+  min-height: 30rem;
+  margin: 1rem auto;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Card--title-container {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  padding: .5rem 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+
+  flex:0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Card-title {
+  order: 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.Card-id {
+  order: 2;
+  margin-left: 1.2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.Card-genus {
+  margin: 0 auto 0 .4rem;
+  font-size: .9rem;
+}
+
+.Card-id::before {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url('img/content/pokeball.png');
+  background-size: cover;
+  position: absolute;
+  left: -1.5rem;
+}
+
+.Card--type-container {
+  width: 9.5rem;
+  margin: .8rem auto 2rem 1.8rem;
+
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Card-type {
+  display: inline-block;
+  border: .1rem solid black;
+  border-radius: 1rem;
+  color: #fff;
+  padding: .15rem .25rem;
+  font-size: .8rem;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+.Card--image-container {
+  background-color: white;
+  box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.2);
+  width: 10rem;
+  height: 10rem;
+}
+
+.Card--image-container img {
+  height: 100%;
+}
+
+.Card--description-container {
+  background-color: white;
+  padding: 2rem 2rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+
+  align-self: flex-end;
+  flex: 0 0 auto;
+}
+
+.Card--description-container h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.Card-description {
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+.Card-additional-info-container {
+  width: 14rem;
+  height: 8rem;
+
+  margin: 0;
+  -webkit-padding-start: 0;
+
+  align-self: center;
+}
+.Card-additional-info-container li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-variant: small-caps;
+  list-style-type: none;
+}
+.Card-btnNav {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.Card-btnBack {
+  left: -3rem;
+}
+
+.Card-btnForward {
+  right: -3rem;
+  color: rgba(231,56,39,1);
+}
